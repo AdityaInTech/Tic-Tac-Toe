@@ -46,7 +46,8 @@ The entire UI is styled using CSS and works smoothly on both desktop and mobile 
 -If false → place X 
 
 After each click:
-```javascript
+```
+javascript
 button.innerText = 'O' or 'X';
 button.disabled = true;   // So a box can’t be clicked twice
 playerO = !playerO;       // Switch player
@@ -54,20 +55,23 @@ playerO = !playerO;       // Switch player
 
 ### Winning Pattern Logic
 -Winning combinations are stored in an array:
-```let winning_ptrn = [
+```
+let winning_ptrn = [
   [0,1,2], [3,4,5], [6,7,8],   // Rows
   [0,3,6], [1,4,7], [2,5,8],   // Columns
   [0,4,8], [2,4,6]             // Diagonals
 ];
 ```
 -Each turn, the game checks:
-```Are the three positions non-empty?
+```
+Are the three positions non-empty?
 Do they contain the same symbol?
 If yes → winner found.
 ```
 ### Winner Detection Function
 
-```const checkWinner = () => {
+```
+const checkWinner = () => {
     console.log(count);
     for(let ptrn of winning_ptrn){
         let pos1val = buttons[ptrn[0]].innerText;
@@ -95,7 +99,8 @@ If yes → winner found.
 -No winner has been found
 -Handled using a counter:
 
-```let count = 0;
+```
+let count = 0;
 count++;
 if (count === 9) show_Winner("Draw");
 ```
@@ -103,7 +108,8 @@ if (count === 9) show_Winner("Draw");
 ### Reset / New Game
 -Both buttons call the same function:
 
-```const enabledbtn = () => {
+```
+const enabledbtn = () => {
     for (let button of buttons){
         button.disabled = false;
         button.innerText = ""
