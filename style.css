@@ -1,0 +1,108 @@
+body {
+  background: linear-gradient(to right, #86bfc4, #cfb671a4, #84faafec, #8fd2f4b0);
+  text-align: center;
+}
+.heading{
+    font-size: 3rem;
+}
+.container{
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.game{
+    height: 50vmin;
+    width: 50vmin;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5vmin;
+}
+
+.button{
+    height: 15vmin;
+    width: 15vmin;
+    border-radius: 1rem;
+    font-size: 8vmin;
+    color:black;
+    background-color: rgb(202, 241, 223);
+}
+
+.button:hover {
+  background-color: #b2ebf2;    
+  transform: scale(1.05);
+  box-shadow: 0 0 10px rgba(0,0,0,0.4);
+  transition: all 0.1s ease-in-out;
+  cursor: pointer;
+}
+.reset{
+    height: 10vmin;
+    font-size: 1.25rem;
+    background-color: #6ce6d1;
+    border-radius: 1rem;
+}
+.reset:hover {
+  background-color: #b2ebf2;   
+  transform: scale(0.9);
+  box-shadow: 0 0 10px rgba(0,0,0,0.8);
+  transition: all 0.1s ease-in-out;
+  cursor: pointer;
+}
+#new{
+    height: 12vmin;
+    width: 25vmin;
+    font-size: 1.45rem;
+    background-color: #6ce6d1;
+    border-radius: 1rem;
+}
+#new:hover {
+  background-color: #b2ebf2;  
+  transform: scale(0.9);
+  box-shadow: 0 0 10px rgba(0,0,0,0.6);
+  transition: all 0.1s ease-in-out;
+  cursor: pointer;
+}
+#msg{
+    color: black;
+    font-size: 8vmin;
+}
+.msgbox{
+    height: 30vmin;
+}
+.hide{
+    display: none;
+}
+
+
+/* ------------------------------
+   🔥 RESPONSIVE FIX (ONLY CHANGE)
+   ------------------------------ */
+@media (max-width: 600px) {
+    .heading {
+        font-size: 2rem;
+    }
+
+    .game {
+        width: 80vmin;
+        height: 80vmin;
+        gap: 2vmin;
+    }
+
+    .button {
+        width: 24vmin;
+        height: 24vmin;
+        font-size: 10vmin;
+    }
+    .reset,
+    #new {
+        height: 13vmin;
+        font-size: 1.1rem;
+    }
+
+    #msg {
+        font-size: 6vmin;
+    }
+  }
