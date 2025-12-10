@@ -67,24 +67,24 @@ If yes → winner found.
 ```
 ### Winner Detection Function
 
--const checkWinner = () => {
--    console.log(count);
--    for(let ptrn of winning_ptrn){
--        let pos1val = buttons[ptrn[0]].innerText;
--        let pos2val = buttons[ptrn[1]].innerText;
--        let pos3val = buttons[ptrn[2]].innerText;
--        
--        if(pos1val!="" && pos2val!="" && pos3val!=""){
--            if(pos1val == pos2val && pos2val == pos3val){
--                show_Winner(pos1val);
--            }
--            if (count === 9){
--                let draw = "Draw";
--                show_Winner(draw);
--            }
--        }
--    }
-}
+```const checkWinner = () => {
+    console.log(count);
+    for(let ptrn of winning_ptrn){
+        let pos1val = buttons[ptrn[0]].innerText;
+        let pos2val = buttons[ptrn[1]].innerText;
+        let pos3val = buttons[ptrn[2]].innerText;
+       
+        if(pos1val!="" && pos2val!="" && pos3val!=""){
+            if(pos1val == pos2val && pos2val == pos3val){
+                show_Winner(pos1val);
+            }
+            if (count === 9){
+                let draw = "Draw";
+                show_Winner(draw);
+            }
+        }
+    }
+}```
 
 -This checks every possible win line until one matches.
 
@@ -94,26 +94,27 @@ If yes → winner found.
 -No winner has been found
 -Handled using a counter:
 
--let count = 0;
--count++;
--if (count === 9) show_Winner("Draw");
+```let count = 0;
+count++;
+if (count === 9) show_Winner("Draw");
+```
 
 ### Reset / New Game
 -Both buttons call the same function:
 
--const enabledbtn = () => {
--    for (let button of buttons){
--        button.disabled = false;
--        button.innerText = ""
--    }
--};
--const resetGame = () => {
--    playerO = true;
--    enabledbtn();
--    msgbox.classList.add("hide");
--    count = 0;
--}
-
+```const enabledbtn = () => {
+    for (let button of buttons){
+        button.disabled = false;
+        button.innerText = ""
+    }
+};
+const resetGame = () => {
+    playerO = true;
+    enabledbtn();
+    msgbox.classList.add("hide");
+    count = 0;
+}
+```
 ## 🎨 Styling & UI (Humanized Explanation)
 
 Explain how you made it look nice, mobile-friendly, and interactive. For example:
