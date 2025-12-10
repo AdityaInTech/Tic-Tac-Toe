@@ -84,7 +84,8 @@ If yes → winner found.
             }
         }
     }
-}```
+}
+```
 
 -This checks every possible win line until one matches.
 
