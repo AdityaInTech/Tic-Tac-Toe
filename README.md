@@ -50,6 +50,7 @@ After each click:
 button.innerText = 'O' or 'X';
 button.disabled = true;   // So a box can’t be clicked twice
 playerO = !playerO;       // Switch player
+```
 
 ### Winning Pattern Logic
 -Winning combinations are stored in an array:
