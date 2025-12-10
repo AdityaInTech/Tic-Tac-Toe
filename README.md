@@ -1,8 +1,8 @@
-# ⭐ Tic-Tac-Toe Game
+#  Tic-Tac-Toe Game
 
 A simple, interactive, and mobile-responsive Tic-Tac-Toe game built using HTML, CSS, and JavaScript.
 
-## 📌 Overview
+##  Overview
 This project is a browser-based Tic-Tac-Toe game where two players take turns placing O and X on a 3×3 grid. The game automatically:  
 
 - switches turns  
@@ -13,7 +13,7 @@ This project is a browser-based Tic-Tac-Toe game where two players take turns pl
 
 The entire UI is styled using CSS and works smoothly on both desktop and mobile devices.
 
-## 🎯 Features
+##  Features
 -  Clean and colorful UI  
 -  Hover effects for better feedback  
 -  Responsive layout (mobile-friendly)  
@@ -22,7 +22,7 @@ The entire UI is styled using CSS and works smoothly on both desktop and mobile 
 -  Easy-to-understand logic  
 -  No external libraries needed  
 
-## 🏗 Project Structure
+##  Project Structure
 ### HTML
 - Displays the game board  
 - Shows winner messages  
@@ -40,7 +40,7 @@ The entire UI is styled using CSS and works smoothly on both desktop and mobile 
 - Manages draw detection  
 - Enables/disables buttons  
 
-## 🧠 Game Logic Explained (Humanized + Detailed)
+##  Game Logic Explained (Humanized + Detailed)
 ### Player Turn Handling
 -If `playerO` is true → place O  
 -If false → place X 
@@ -122,7 +122,7 @@ const resetGame = () => {
     count = 0;
 }
 ```
-## 🎨 Styling & UI (Humanized Explanation)
+##  Styling & UI (Humanized Explanation)
 
 Explain how you made it look nice, mobile-friendly, and interactive. For example:
 
@@ -133,7 +133,7 @@ Explain how you made it look nice, mobile-friendly, and interactive. For example
 
 ---
 
-## 💡 Future Enhancements
+##  Future Enhancements
 
 Optional ideas for expanding the project:
 
