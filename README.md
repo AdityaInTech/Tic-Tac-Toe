@@ -14,13 +14,13 @@ This project is a browser-based Tic-Tac-Toe game where two players take turns pl
 The entire UI is styled using CSS and works smoothly on both desktop and mobile devices.
 
 ## 🎯 Features
-- ✔ Clean and colorful UI  
-- ✔ Hover effects for better feedback  
-- ✔ Responsive layout (mobile-friendly)  
-- ✔ Automatic win/draw detection  
-- ✔ Reset & New Game functions  
-- ✔ Easy-to-understand logic  
-- ✔ No external libraries needed  
+-  Clean and colorful UI  
+-  Hover effects for better feedback  
+-  Responsive layout (mobile-friendly)  
+-  Automatic win/draw detection  
+-  Reset & New Game functions  
+-  Easy-to-understand logic  
+-  No external libraries needed  
 
 ## 🏗 Project Structure
 ### HTML
@@ -54,16 +54,17 @@ playerO = !playerO;       // Switch player
 
 ### Winning Pattern Logic
 -Winning combinations are stored in an array:
--let winning_ptrn = [
+```let winning_ptrn = [
   [0,1,2], [3,4,5], [6,7,8],   // Rows
   [0,3,6], [1,4,7], [2,5,8],   // Columns
   [0,4,8], [2,4,6]             // Diagonals
 ];
+```
 -Each turn, the game checks:
--Are the three positions non-empty?
--Do they contain the same symbol?
--If yes → winner found.
-
+```Are the three positions non-empty?
+Do they contain the same symbol?
+If yes → winner found.
+```
 ### Winner Detection Function
 
 -const checkWinner = () => {
