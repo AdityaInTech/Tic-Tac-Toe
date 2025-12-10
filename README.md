@@ -45,11 +45,11 @@ The entire UI is styled using CSS and works smoothly on both desktop and mobile 
 -If `playerO` is true → place O  
 -If false → place X 
 
--After each click:
--```javascript
--button.innerText = 'O' or 'X';
--button.disabled = true;   // So a box can’t be clicked twice
--playerO = !playerO;       // Switch player
+After each click:
+```javascript
+button.innerText = 'O' or 'X';
+button.disabled = true;   // So a box can’t be clicked twice
+playerO = !playerO;       // Switch player
 
 ### Winning Pattern Logic
 -Winning combinations are stored in an array:
