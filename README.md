@@ -124,7 +124,7 @@ const resetGame = () => {
 ```
 ##  Styling & UI (Humanized Explanation)
 
-Explain how you made it look nice, mobile-friendly, and interactive. For example:
+Explain how you made it look nice, mobile-friendly, and interactive. For example :
 
 - **Background gradient**: Creates a colorful, playful look.  
 - **Board layout and size**: Maintains a perfect square using `vmin` units for responsive sizing.  
@@ -141,9 +141,4 @@ Optional ideas for expanding the project:
 - Scoreboard to track wins  
 - Dark mode  
 - Sound effects  
-- Confetti animation on win
-
-
-
-
 
